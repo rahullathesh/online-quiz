@@ -1,212 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IQnnect - Subscription</title>
-  <style>
-
-
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-    body { background: #fff; color: #333; line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    h1, h2, h3 { color: #2b7cff; }
-    p { color: #555; margin-bottom: 15px; }
-
-    
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .topbar .brand a {
-      font-size: 26px;
-      font-weight: 700;
-      color: #2b7cff;
-    }
-    .topbar .nav a {
-      margin: 0 18px;
-      font-weight: 500;
-      color: #333;
-      position: relative;
-      padding-bottom: 5px;
-      transition: color 0.3s;
-    }
-    .topbar .nav a:hover,
-    .topbar .nav a.active {
-      color: #2b7cff;
-    }
-    .topbar .nav a.active::after,
-    .topbar .nav a:hover::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 3px;
-      background: #2b7cff;
-      border-radius: 2px;
-    }
-    .topbar .nav-right a {
-      margin-left: 12px;
-      padding: 8px 16px;
-      border-radius: 6px;
-      border: 1px solid #2b7cff;
-      color: #2b7cff;
-      transition: all 0.3s;
-    }
-    .topbar .nav-right a:hover {
-      background: #2b7cff;
-      color: #fff;
-    }
-
-    /* ===== MAIN CONTAINER ===== */
-    .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-    .container h1 { font-size: 32px; text-align: center; margin-bottom: 10px; }
-    .container p { text-align: center; margin-bottom: 40px; }
-
-    
-    .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 50px; }
-    .plan {
-      border: 1px solid #eee;
-      border-radius: 12px;
-      padding: 25px;
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .plan:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .plan h2 { font-size: 24px; margin-bottom: 10px; }
-    .plan h3 { font-size: 20px; color: #2b7cff; margin-bottom: 15px; }
-    .plan ul { text-align: left; margin-top: 15px; }
-    .plan ul li { padding: 8px 0; border-bottom: 1px solid #eee; }
-    .plan ul li:last-child { border-bottom: none; }
-    .plan .btn { margin-top: 20px; display: inline-block; padding: 10px 20px; background: #2b7cff; color: #fff; border-radius: 6px; transition: 0.3s; }
-    .plan .btn:hover { background: #165dcc; }
-
-    
-    .faq { max-width: 900px; margin: 0 auto 50px auto; }
-    .faq h2 { text-align: center; margin-bottom: 30px; }
-    .faq-item { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-    .faq-item h3 { font-size: 18px; color: #2b7cff; cursor: pointer; margin-bottom: 8px; }
-    .faq-item p { color: #555; margin-left: 10px; }
-
-    /* ===== CTA ===== */
-    .cta { text-align: center; margin-bottom: 50px; }
-    .cta h2 { font-size: 26px; margin-bottom: 15px; }
-    .cta p { margin-bottom: 20px; }
-    .cta .btn { padding: 12px 25px; font-size: 16px; }
-
-    /* ===== FOOTER ===== */
-    .footer { text-align: center; padding: 15px; background: #f9f9f9; border-top: 1px solid #ddd; font-size: 14px; color: #555; }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IQnnect - Subscription</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 </head>
 <body>
 
-<!-- TOPBAR -->
-<header class="topbar">
-  <div class="brand"><a href="new.html">IQnnect</a></div>
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="quiz.html">Quizzes</a>
-    <a href="subscription.html" class="active">Subscription</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="profile.html">Profile</a>
-  </nav>
-  <div class="nav-right">
-    <a href="signup.html">Sign Up</a>
-    <a href="login.html">Log In</a>
-  </div>
-</header>
+	<header class="topbar">
+		<div class="brand"><a href="index.html">IQnnect</a></div>
+		<nav class="nav">
+			<a href="index.html">Home</a>
+			<a href="quiz.html">Quizzes</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="subscription.html" class="active">Subscription</a>
+			<a href="profile.html">Profile</a>
+		</nav>
+		<div class="nav-right">
+			<a href="signup.html" class="btn">Sign Up</a>
+			<a href="login.html" class="btn btn-primary">Log In</a>
+		</div>
+	</header>
 
-<!-- MAIN CONTENT -->
-<main>
-  <div class="container">
-    <h1>Choose Your Learning Path</h1>
-    <p>Unlock your full potential with flexible plans designed for every type of learner. From casual quiz-takers to serious students and educational teams.</p>
+	<main>
+		<section class="hero">
+			<h1>Choose Your Learning Path</h1>
+			<p>Unlock your full potential with flexible plans designed for every type of learner.</p>
+		</section>
 
-    <div class="plans">
-      <div class="plan">
-        <h2>Free</h2>
-        <h3>$0 / forever</h3>
-        <ul>
-          <li>5 quizzes per day</li>
-          <li>Basic categories</li>
-          <li>Standard difficulty</li>
-          <li>Community leaderboards</li>
-          <li>Basic progress tracking</li>
-        </ul>
-        <a href="#" class="btn">Get Started</a>
-      </div>
-      <div class="plan">
-        <h2>Pro <span style="font-size:14px; color:#ff7f50;">Most Popular</span></h2>
-        <h3>$9.99 / month</h3>
-        <ul>
-          <li>Unlimited quizzes</li>
-          <li>All categories & topics</li>
-          <li>Adaptive difficulty</li>
-          <li>Advanced analytics</li>
-          <li>Custom quiz creation</li>
-          <li>Priority support</li>
-          <li>Offline mode</li>
-        </ul>
-        <a href="#" class="btn">Start Pro Trial</a>
-      </div>
-      <div class="plan">
-        <h2>Premium</h2>
-        <h3>$19.99 / month</h3>
-        <ul>
-          <li>Everything in Pro</li>
-          <li>Team management</li>
-          <li>Custom branding</li>
-          <li>Bulk user management</li>
-          <li>Advanced reporting</li>
-          <li>API access</li>
-          <li>White-label solution</li>
-          <li>Dedicated support</li>
-        </ul>
-        <a href="#" class="btn">Contact Sales</a>
-      </div>
-    </div>
-
-    <!-- FAQ -->
-    <div class="faq">
-      <h2>Frequently Asked Questions</h2>
-      <div class="faq-item">
-        <h3>Can I switch plans anytime?</h3>
-        <p>Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately for upgrades and at the next billing cycle for downgrades.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What payment methods do you accept?</h3>
-        <p>We accept all major credit cards, PayPal, and bank transfers for annual plans. All payments are processed securely through Stripe.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Is there a free trial for paid plans?</h3>
-        <p>Yes! Pro plans come with a 14-day free trial. Premium plans include a 30-day trial with full access to team features.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Can I get a refund if I'm not satisfied?</h3>
-        <p>Absolutely! We offer a 30-day money-back guarantee on all paid plans. Just contact our support team for a full refund.</p>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="cta">
-      <h2>Ready to Supercharge Your Learning?</h2>
-      <p>Join over 50,000 learners who have already transformed their quiz experience with IQnnect.</p>
-      <a href="#" class="btn">Start Your Free Trial Today</a>
-    </div>
-  </div>
-</main>
-
-<!-- FOOTER -->
-<div class="footer">&copy; 2025 IQnnect. All Rights Reserved.</div>
+		<section class="plans-section" style="max-width:1100px;margin:0 auto;padding:2rem 1rem;">
+			<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;">
+				<!-- Free Plan -->
+				<div class="service-card" style="background:#fff;padding:2rem;border-radius:1rem;box-shadow:0 4px 10px rgba(0,0,0,0.08);text-align:center;">
+					<h2>Free</h2>
+					<h3 style="color:#2b7cff;">$0 / forever</h3>
+					<ul style="list-style:none;padding:0;margin:1rem 0 0 0;text-align:left;">
+						<li>5 quizzes per day</li>
+						<li>Basic categories</li>
+						<li>Standard difficulty</li>
+						<li>Community leaderboards</li>
+						<li>Basic progress tracking</li>
+					</ul>
+					<a href="#" class="btn btn-primary" style="margin-top:1rem;">Get Started</a>
+				</div>
+				<!-- Pro Plan -->
+				<div class="service-card" style="background:#fff;padding:2rem;border-radius:1rem;box-shadow:0 4px 10px rgba(0,0,0,0.08);text-align:center;">
+					<h2>Pro <span style="font-size:14px;color:#ff7f50;">Most Popular</span></h2>
+					<h3 style="color:#2b7cff;">$9.99 / month</h3>
+					<ul style="list-style:none;padding:0;margin:1rem 0 0 0;text-align:left;">
+						<li>Unlimited quizzes</li>
+						<li>All categories & topics</li>
+						<li>Adaptive difficulty</li>
+						<li>Advanced analytics</li>
+						<li>Custom quiz creation</li>
+						<li>Priority support</li>
+						<li>Offline mode</li>
+					</ul>
+					<a href="#" class="btn btn-primary" style="margin-top:1rem;">Start Pro Trial</a>
+				</div>
+				<!-- Premium Plan -->
+				<div class="service-card" style="background:#fff;padding:2rem;border-radius:1rem;box-shadow:0 4px 10px rgba(0,0,0,0.08);text-align:center;">
+					<h2>Premium</h2>
+					<h3 style="color:#2b7cff;">$19.99 / month</h3>
+					<ul style="list-style:none;padding:0;margin:1rem 0 0 0;text-align:left;">
+						<li>Everything in Pro</li>
+						<li>Team management</li>
+						<li>Custom branding</li>
+						<li>Bulk user management</li>
+						<li>Advanced reporting</li>
+						<li>API access</li>
+						<li>White-label solution</li>
+						<li>Dedicated support</li>
+					</ul>
+					<a href="#" class="btn btn-primary" style="margin-top:1rem;">Contact Sales</a>
+				</div>
+			</div>
+		</section>
+	</main>
 
 </body>
 </html>
