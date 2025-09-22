@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQnnect - Discover Quizzes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><a href="index.html">IQnnect</a></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="quiz.html" class="active">Quizzes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="subscription.html">Subscription</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <div class="nav-right">
+      <a href="signup.html" class="btn btn-secondary">Sign Up</a>
+      <a href="login.html" class="btn btn-primary">Log In</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="quiz-hero">
+      <h1>Discover Amazing Quizzes</h1>
+      <p>Challenge yourself with thousands of carefully crafted quizzes across multiple categories</p>
+      
+      <div class="search-container">
+        <input type="text" placeholder="Search quizzes..." class="search-input">
+        <button class="search-btn">🔍</button>
+      </div>
+    </section>
+
+    <section class="quiz-categories">
+      <h2>Categories</h2>
+      <div class="category-filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Science</button>
+        <button class="filter-btn">Technology</button>
+        <button class="filter-btn">History</button>
+        <button class="filter-btn">Arts</button>
+        <button class="filter-btn">Mathematics</button>
+        <button class="filter-btn">Health</button>
+        <button class="filter-btn">Sports</button>
+      </div>
+    </section>
+
+    <section class="quiz-results">
+      <h2>All Quizzes (6 results)</h2>
+      
+      <div class="quiz-grid">
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <h3>Advanced JavaScript Concepts</h3>
+            <div class="quiz-badges">
+              <span class="badge new">New</span>
+              <span class="badge popular">Popular</span>
+            </div>
+          </div>
+          <div class="quiz-meta">
+            <span class="level hard">Hard</span>
+            <span class="rating">★ 4.8</span>
+          </div>
+          <p class="quiz-description">Master closures, promises, async/await, and advanced ES6+ features.</p>
+          <div class="quiz-stats">
+            <span>25q</span>
+            <span>30 min</span>
+            <span>1,234 participants</span>
+          </div>
+          <button class="btn btn-primary quiz-start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <h3>World History: Ancient Civilizations</h3>
+            <div class="quiz-badges">
+              <span class="badge featured">Featured</span>
+            </div>
+          </div>
+          <div class="quiz-meta">
+            <span class="level medium">Medium</span>
+            <span class="rating">★ 4.6</span>
+          </div>
+          <p class="quiz-description">Explore the rise and fall of ancient empires from Egypt to Rome.</p>
+          <div class="quiz-stats">
+            <span>20q</span>
+            <span>25 min</span>
+            <span>856 participants</span>
+          </div>
+          <button class="btn btn-primary quiz-start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <h3>Human Biology Fundamentals</h3>
+            <div class="quiz-badges">
+              <span class="badge beginner">Beginner Friendly</span>
+            </div>
+          </div>
+          <div class="quiz-meta">
+            <span class="level easy">Easy</span>
+            <span class="rating">★ 4.9</span>
+          </div>
+          <p class="quiz-description">Learn about human anatomy, physiology, and biological processes.</p>
+          <div class="quiz-stats">
+            <span>15q</span>
+            <span>20 min</span>
+            <span>2,341 participants</span>
+          </div>
+          <button class="btn btn-primary quiz-start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <h3>Renaissance Art Masters</h3>
+            <div class="quiz-badges">
+              <span class="badge cultural">Cultural</span>
+            </div>
+          </div>
+          <div class="quiz-meta">
+            <span class="level medium">Medium</span>
+            <span class="rating">★ 4.7</span>
+          </div>
+          <p class="quiz-description">Discover the works and techniques of Leonardo, Michelangelo, and more.</p>
+          <div class="quiz-stats">
+            <span>18q</span>
+            <span>22 min</span>
+            <span>543 participants</span>
+          </div>
+          <button class="btn btn-primary quiz-start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <h3>Calculus Problem Solving</h3>
+            <div class="quiz-badges">
+              <span class="badge expert">Expert Level</span>
+            </div>
+          </div>
+          <div class="quiz-meta">
+            <span class="level hard">Hard</span>
+            <span class="rating">★ 4.5</span>
+          </div>
+          <p class="quiz-description">Challenge yourself with derivatives, integrals, and limit problems.</p>
+          <div class="quiz-stats">
+            <span>30q</span>
+            <span>45 min</span>
+            <span>789 participants</span>
+          </div>
+          <button class="btn btn-primary quiz-start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-card">
+          <div class="quiz-header">
+            <h3>Nutrition and Wellness</h3>
+            <div class="quiz-badges">
+              <span class="badge popular">Popular</span>
+              <span class="badge health">Health</span>
+            </div>
+          </div>
+          <div class="quiz-meta">
+            <span class="level easy">Easy</span>
+            <span class="rating">★ 4.8</span>
+          </div>
+          <p class="quiz-description">Learn about balanced diets, vitamins, and healthy lifestyle choices.</p>
+          <div class="quiz-stats">
+            <span>12q</span>
+            <span>15 min</span>
+            <span>1,876 participants</span>
+          </div>
+          <button class="btn btn-primary quiz-start-btn">Start Quiz</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-actions">
+      <h2>Can't Find What You're Looking For?</h2>
+      <p>Create your own custom quiz or suggest new topics to our community</p>
+      <div class="action-buttons">
+        <button class="btn btn-primary">Create Quiz</button>
+        <button class="btn btn-secondary">Suggest Topic</button>
+      </div>
+    </section>
+  </main>
+
+  <footer style="background:#f5f5f5; padding:15px 0; text-align:center; font-size:14px; color:#555; margin-top:30px; border-top:1px solid #ddd;">
+    &copy; 2025 IQnnect. All Rights Reserved.
+  </footer>
+
+  <script src="bg.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

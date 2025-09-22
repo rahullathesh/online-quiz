@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQnnect - About</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2b7cff;
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav a {
+      position: relative;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 8px 0;
+      transition: color 0.3s ease;
+    }
+
+    .nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 3px;
+      background: #2b7cff;
+      border-radius: 3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav a:hover::after,
+    .nav a.active::after {
+      transform: scaleX(1);
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #2b7cff;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 12px;
+    }
+
+    .nav-right .btn {
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
+      border: 1px solid #2b7cff;
+      color: #2b7cff;
+    }
+
+    .nav-right .btn:hover {
+      background: #2b7cff;
+      color: #fff;
+    }
+
+    .nav-right .btn-primary {
+      background: #2b7cff;
+      color: #fff;
+    }
+
+    .nav-right .btn-primary:hover {
+      background: #1a5ccc;
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .about-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-header h1 {
+      font-size: 40px;
+      color: #2b7cff;
+    }
+
+    .about-header p {
+      font-size: 18px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .about-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .about-card h2 {
+      margin-bottom: 15px;
+      color: #2b7cff;
+    }
+
+    .about-card p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="index.html">IQnnect</a></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="subscription.html">Subscription</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+    <div class="nav-right">
+      <a href="signup.html" class="btn">Sign Up</a>
+      <a href="login.html" class="btn btn-primary">Log In</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="about-header">
+        <h1>About IQnnect</h1>
+        <p>IQnnect is a smart quiz platform that helps learners improve their knowledge, track progress, and connect with a community of curious minds. Our mission is to make learning interactive, fun, and effective for everyone.</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-card">
+          <h2>Our Vision</h2>
+          <p>We aim to empower learners worldwide by providing a platform where knowledge meets technology. Interactive quizzes and progress tracking keep learning engaging and effective.</p>
+        </div>
+        <div class="about-card">
+          <h2>Our Mission</h2>
+          <p>Our mission is to make knowledge accessible, fun, and measurable. We provide tools to track progress, challenge oneself, and continuously grow intellectually.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

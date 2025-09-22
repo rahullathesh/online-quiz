@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQnnect - Log In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body class="auth-page">
+    
+    <header class="topbar">
+        <div class="brand"><a href="index.html">IQnnect</a></div>
+        <nav class="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="quiz.html">Quizzes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <div class="nav-right">
+            <a href="signup.html" class="btn btn-secondary">Sign Up</a>
+            <a href="login.html" class="btn btn-primary active">Log In</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="simple-auth">
+            <h1>Welcome Back!</h1>
+            <p>Log in to continue your learning journey</p>
+            
+            <form class="simple-form" action="#" method="post">
+                <input type="text" placeholder="Username or Email" required>
+                <input type="password" placeholder="Password" required>
+                
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </form>
+            
+            <div class="social-login">
+                <button class="social-btn">Continue with Google</button>
+                <button class="social-btn">Continue with GitHub</button>
+            </div>
+            
+            <p class="auth-switch">
+                Don't have an account? 
+                <a href="signup.html" class="switch-link">Sign Up</a>
+            </p>
+        </section>
+    </main>
+    <footer style="background:#f5f5f5; padding:15px 0; text-align:center; font-size:14px; color:#555; margin-top:30px; border-top:1px solid #ddd;">
+        &copy; 2025 IQnnect. All Rights Reserved.
+      </footer>
+      
+
+    <script src="bg.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

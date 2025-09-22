@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IQnnect - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body class="auth-page">
+    
+    <header class="topbar">
+        <div class="brand"><a href="index.html">IQnnect</a></div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <div class="nav-right">
+            <a href="signup.html" class="btn btn-primary active">Sign Up</a>
+            <a href="login.html" class="btn btn-secondary">Log In</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="simple-auth">
+            <h1>Join IQnnect!</h1>
+            <p>Start your learning journey today</p>
+            
+            <form class="simple-form" action="#" method="post">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the Terms of Service and Privacy Policy
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+            
+            <div class="social-login">
+                <button class="social-btn">Continue with Google</button>
+                <button class="social-btn">Continue with GitHub</button>
+            </div>
+            
+            <p class="auth-switch">
+                Already have an account? 
+                <a href="login.html" class="switch-link">Log In</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="bg.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
